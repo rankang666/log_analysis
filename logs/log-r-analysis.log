@@ -1,0 +1,9 @@
+2018-11-20 16:10:47 [main] [rk.logs.Log4jTest] [INFO] ------INFO------
+2018-11-20 16:10:47 [main] [rk.logs.Log4jTest] [WARN] ------WARN------
+2018-11-20 16:10:47 [main] [rk.logs.Log4jTest] [ERROR] ------ERROR------
+2018-11-20 16:10:47 [线程] [rk.logs.Log4jTest] [INFO] ------THRED--INFO------
+2018-11-20 16:10:47 [main] [access] [INFO] ----access--INFO------
+2018-11-20 16:10:47 [线程] [access] [WARN] ------THRED--WARN------
+2018-11-20 16:10:47 [main] [access] [WARN] ----access--WARN------
+2018-11-20 16:10:47 [线程] [access] [ERROR] ------THRED--ERROR------
+2018-11-20 16:10:47 [main] [access] [ERROR] ----access--ERROR------

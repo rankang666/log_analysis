@@ -1,0 +1,44 @@
+
+## 规定日志输出的目的地和级别
+#log4j.rootLogger=INFO,console
+#
+#log4j.appender.console = org.apache.log4j.ConsoleAppender
+#log4j.appender.console.Target = System.out
+#log4j.appender.console.layout = org.apache.log4j.PatternLayout
+## log4j.appender.console.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%c] [%p] - %m%n
+#log4j.appender.console.layout.ConversionPattern=%d{yyyy/MM/dd HH:mm:ss -- SSS} [%t] [%c] [%p] %r %l - %m%n
+
+log4j.rootLogger = INFO,stdout,file,R
+
+log4j.logger.access = INFO, ac
+
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy/MM/dd HH:mm:ss -- SSS} [%t] [%c] [%p] %r %l - %m%n 
+
+log4j.appender.file = org.apache.log4j.FileAppender
+log4j.appender.file.File = logs/log-analysis.log
+log4j.appender.file.Append = true
+log4j.appender.file.layout = org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern = %d{yyyy-MM-dd HH:mm:ss} [%t] [%c] [%p] %m%n
+
+log4j.appender.R = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.R.File = logs/log-r-analysis.log
+log4j.appender.R.Append = true
+log4j.appender.R.layout = org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern = %d{yyyy-MM-dd HH:mm:ss} [%t] [%c] [%p] %m%n
+
+
+log4j.appender.ac = org.apache.log4j.FileAppender
+log4j.appender.ac.File = logs/access.log
+log4j.appender.ac.Append = true
+log4j.appender.ac.layout = org.apache.log4j.PatternLayout
+log4j.appender.ac.layout.ConversionPattern = %d{yyyy-MM-dd HH:mm:ss} [%t] [%c] [%p] %m%n
+
+
+
+
+
+
+
